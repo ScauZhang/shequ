@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>发现</title>
+	<link rel="stylesheet" href="css/neat.css">
+	<link rel="stylesheet" href="css/grid.css">
+	<link rel="stylesheet" href="css/font-awesome/css/font-awesome.css">
+	<link rel="stylesheet" href="css/function.css">
+</head>
+<body>
+	<div class="sd-left clear">
+		<ul class="sdc-left">
+			<li>
+				<a href="#">
+					<span class="icon-user icon-size"></span>
+					<span>个人</span>
+				</a>
+				<div class="user-info">
+					<a href="#" class="u-user-pic" title="个人资料"><img src="images/user/1801_s.jpg" alt="ScauZhang"></a>
+					<a href="#" title="个人设置"><span class="icon-cog"></span></a>
+					<a href="#" title="消息"><span class="notify">1</span></a>
+					<a href="#" title="安全退出"><span class="icon-signout"></span></a>
+				</div>
+			</li>
+			<li>
+				<a href="#">
+					<span class="icon-search icon-size"></span>
+					<span>搜索</span>
+				</a>
+				<div class="sdc-sch">
+					<input type="text" placeholder="想找什么" id="search-query">
+					<input type="button" value="搜索" rel="search-query">
+				</div>
+			</li>
+			<li>
+				<a href="#">
+					<span class="icon-group icon-size"></span>
+					<span>专区</span>
+				</a>
+				<ul class="nav-lst">
+					<li><a href="#">weChat</a></li>
+					<li><a href="#">Fis</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#">
+					<span class="icon-eye-open icon-size"></span>
+					<span>发现</span>
+				</a>
+			</li>
+		</ul>		
+	</div>
+	<div class="sd-right">
+
+		<div class="u-tips u-tips-warm">
+			你尚未取得Div.io的邀请码，只能访问本站的部分内容。<a href="#">绑定邀请码</a>
+		</div>
+		<div class="dtl-main">
+			<div class="dtl-att clear">
+				<div class="pull-right">
+					<a href="#" class="u-user-pic-s" title="个人资料"><img src="images/user/1801_s.jpg" alt="ScauZhang"></a>
+					<a href="#" class="u-user-pic-s" title="个人资料"><img src="images/user/1801_s.jpg" alt="ScauZhang"></a>
+					<a href="#" class="u-user-pic-s" title="个人资料"><img src="images/user/1801_s.jpg" alt="ScauZhang"></a>
+					<a href="#" class="u-user-pic-s" title="个人资料"><img src="images/user/1801_s.jpg" alt="ScauZhang"></a>
+					<a href="#" class="u-user-pic-s" title="个人资料"><img src="images/user/1801_s.jpg" alt="ScauZhang"></a>
+					<span>16&nbsp;人关注了该主题</span>
+					<span class="att-item"><a href="#" class="a-style1"><span class="icon-heart-empty"></span>&nbsp;关注主题</a></span>
+				</div>
+				
+			</div>
+			<div class="dtl-head">
+				<div class="act-user"><a class="u-user-pic-b" href="#"><img src="images/user/1801_s.jpg" alt="ScauZhang"></a></div>
+				<div class="act-dtl">
+					<h1><a href="#">关于IOS浏览器中 操作DOM 闪动</a></h1>
+					<p><span class="name-tag">问答</span>&nbsp;<a href="#">Javascript</a>&nbsp;|&nbsp;5&nbsp;小时前&nbsp;|&nbsp;<span class="icon-comment-alt"></span>&nbsp;0</p>
+				</div>
+			</div>
+
+			<div class="dtl-cont">
+			    <p>首先，我们来考虑一下什么是架构：<a href="http://baike.baidu.com/view/1147116.htm?fr=aladdin" target="_blank">软件架构_百度百科</a></p>
+
+				<blockquote>
+				<p>软件架构（software architecture）是一系列相关的抽象模式，用于指导大型软件系统各个方面的设计。</p>
+				</blockquote>
+
+				<p>传统软件架构描述的对象是直接构成系统的抽象组件，侧重于系统的抽象、拆分、组织方式等。所以如果从传统软件架构定义出发，前端架构可能就是指前端项目的系统设计了。在进行系统设计之前，由于前端开发语言缺乏一定的工程能力，所以 <strong>web前端架构师相比传统软件架构师还应该能提供以下开发基础的支持</strong>：</p>
+
+				<ul><li><code>开发规范</code>：开发规范设计非常重要，设计良好的开发规范应该以实用性为前提，可以提升开发效率，降低维护成本。常见的规范主要是针对模块化开发定义的，想象一下，下面的规范示意图是不是能对开发和维护有极大的帮助：<img src="http://pic4.zhimg.com/60ead9f4b63f42ae8ad6dd2f59783bde_b.jpg" alt="开发规范"></li>
+				<li><code>开发模型</code>：主要是模块化开发。前端由于编程语言的问题，没有原生的模块化支持，所以架构师在做架构设计之前，要先提供模块开发体系。模块化开发体系设计挺复杂的，完整的模块化体系要统一js、css和模板的模块化处理，此外，js、css模板中的资源（图片等）引用也是要考虑的问题。此外，模块化框架肩负着资源的加载控制，要面对性能优化，所以，好的架构师给出的模块化方案应该是能把性能优化做到框架中，性能是一个工程问题！</li>
+				<li><code>构建工具</code>：还是由于前端开发语言的问题，前端还需要构建工具配合，才能完成开发规范、开发模型的落地实现。这部分也许有人认为是非必须的，但是我可以给出完整论证证明标准前端项目必须经过构建，这里就不展开了。总之，前端架构师在给出规范、模型之后，还要给出配套的工具来保证它们的实现。<br>
+				web前端架构师至少要提供以上3项之后才能开展正式的架构设计，我觉得这部分是衡量一个架构师设计能力的重要指标之一。基础搞定了，架构设计的开展才能顺利。没有标准的模块化支持，架构设计很难做。</li>
+				</ul>
+
+				<p>此外，由于web前端的产品模式与传统软件有很大差异，所以我觉得真正的前端架构师还应该能考虑以下问题：</p>
+
+				<ul><li><code>项目部署</code>：前端项目部署应该由前端架构师来决定，这里涉及到网络性能优化和开发规范对接的问题，所以前端架构师要理解工程部署的过程，并把开发和部署打通，否则开发受限于部署，架构设计会遇到阻碍。</li>
+				<li><code>组件化与组件生态</code>：由于前端面向的是界面设计，所以在模块化之上还有组件化开发模型需要架构师提供。此外，项目中一些可复用的模块或组件应该有一定的复用渠道，这部分我称之为生态。架构师应该提供这样的渠道来解决多个团队或项目之间的代码复用问题。</li>
+				<li><code>前端统计</code>：前端统计包括性能统计、访问统计、用户行为统计、错误统计、安全监控等，虽然有些统计属于产品指标，但在大数据时代，前端研发的方向应该有一定的数据做指导，前端架构师必须关心统计数据，并能提供统计方案、统计平台是一种衡量指标。</li>
+				<li><code>前端安全</code>：这部分也应该有架构师负责的部分。主要是在开发、统计的过程中对前端安全做保障，比如xss修复、页面脚本注入监控等</li>
+				<li><code>系统测试</code>：很多人总是尝试用API测试方法论中的单元测试来测试前端项目，其实是片面的。前端测试属于GUI测试范畴，前端项目中使用的框架、类库一般由外部提供，已经由API测试做了质量保证，而项目中的测试应该主要集中在GUI测试上，这部分目前没有好的解决方案做支撑，所以也没有什么好的衡量办法。</li>
+				</ul>
+
+				<p>以上就是我觉得衡量前端架构师的基本要求，现在已经不在是 <code>写一个jquery就是架构师</code> 的时代了，前端本应该是一个系统化、工程化的理论体系，涉及到很多方面，前端工程师的工程化意识应该加强。</p>
+
+				<blockquote>
+				<p>或许现在很多企业和团队尚未重视前端工程，或许前端工程在很多人眼里还只是“构建工具”的代名词，又或许未来前端领域的变革使得一切工程问题从根本上得到解决。不管怎样，我只是希望当下能认真的记录自己在前端工程领域的所见所想，与正在经历前端工程化改进，并被此过程困扰的同学交流心得。</p>
+				</blockquote>
+			</div>
+			
+			<div class="dtl-share">
+				<span class="icon-comment-alt"></span>
+				<a href="#" class="a-style1">回复</a>
+				<span class="icon-twitter"></span>
+				<a href="#" class="a-style1">分享</a>
+				<span class="icon-heart-empty"></span>
+				<a href="#" class="a-style1">感谢</a>
+			</div>
+
+
+			<ul class="dtl-comt">
+				<li>
+					<div class="comt-upic">
+							<a class="u-user-pic-b" href="#"><img src="images/user/1801_s.jpg" alt="ScauZhang"></a>
+						</div>
+						<div>
+							<p class="comt-uname">
+								<a href="#" class="uname-ath">ScauZhang</a><span class="icon-heart-empty"></span>1
+								<a href="#" class="pull-right">#1</a>
+								<a href="#" class="comt-star pull-right">赞</a>
+							</p>
+							<p class="comt-ptime">
+								6&nbsp;月前
+							</p>
+							<div class="comt-cont">
+								赞，行业风向标就这篇了。
+								其实我想知道为什么很多前端开发人员用一点点后端的知识就可以漂亮解决的问题，为什么会花N倍的时间非要在浏览器上用纯前端来解决。
+							</div>
+						</div>
+				</li>
+				<li>
+					<div class="comt-upic">
+							<a class="u-user-pic-b" href="#"><img src="images/user/1801_s.jpg" alt="ScauZhang"></a>
+						</div>
+						<div>
+							<p class="comt-uname">
+								<a href="#" class="uname-ath">ScauZhang</a><span class="icon-heart-empty"></span>1
+								<a href="#" class="pull-right">#1</a>
+								<a href="#" class="comt-star pull-right">赞</a>
+							</p>
+							<p class="comt-ptime">
+								6&nbsp;月前
+							</p>
+							<div class="comt-cont">
+								赞，行业风向标就这篇了。
+								其实我想知道为什么很多前端开发人员用一点点后端的知识就可以漂亮解决的问题，为什么会花N倍的时间非要在浏览器上用纯前端来解决。
+							</div>
+						</div>
+				</li>
+				<li>
+					<div class="comt-upic">
+							<a class="u-user-pic-b" href="#"><img src="images/user/1801_s.jpg" alt="ScauZhang"></a>
+						</div>
+						<div>
+							<p class="comt-uname">
+								<a href="#" class="uname-ath">ScauZhang</a><span class="icon-heart-empty"></span>1
+								<a href="#" class="pull-right">#1</a>
+								<a href="#" class="comt-star pull-right">赞</a>
+							</p>
+							<p class="comt-ptime">
+								6&nbsp;月前
+							</p>
+							<div class="comt-cont">
+								赞，行业风向标就这篇了。
+								其实我想知道为什么很多前端开发人员用一点点后端的知识就可以漂亮解决的问题，为什么会花N倍的时间非要在浏览器上用纯前端来解决。
+							</div>
+						</div>
+				</li>
+				<li>
+					<div class="comt-upic">
+							<a class="u-user-pic-b" href="#"><img src="images/user/1801_s.jpg" alt="ScauZhang"></a>
+						</div>
+						<div>
+							<p class="comt-uname">
+								<a href="#" class="uname-ath">ScauZhang</a><span class="icon-heart-empty"></span>1
+								<a href="#" class="pull-right">#1</a>
+								<a href="#" class="comt-star pull-right">赞</a>
+							</p>
+							<p class="comt-ptime">
+								6&nbsp;月前
+							</p>
+							<div class="comt-cont">
+								赞，行业风向标就这篇了。
+								其实我想知道为什么很多前端开发人员用一点点后端的知识就可以漂亮解决的问题，为什么会花N倍的时间非要在浏览器上用纯前端来解决。
+							</div>
+						</div>
+				</li>
+				<li>
+					<div class="comt-upic">
+							<a class="u-user-pic-b" href="#"><img src="images/user/1801_s.jpg" alt="ScauZhang"></a>
+						</div>
+						<div>
+							<p class="comt-uname">
+								<a href="#" class="uname-ath">ScauZhang</a><span class="icon-heart-empty"></span>1
+								<a href="#" class="pull-right">#1</a>
+								<a href="#" class="comt-star pull-right">赞</a>
+							</p>
+							<p class="comt-ptime">
+								6&nbsp;月前
+							</p>
+							<div class="comt-cont">
+								赞，行业风向标就这篇了。
+								其实我想知道为什么很多前端开发人员用一点点后端的知识就可以漂亮解决的问题，为什么会花N倍的时间非要在浏览器上用纯前端来解决。
+							</div>
+						</div>
+				</li>
+				<li>
+					<div class="comt-upic">
+							<a class="u-user-pic-b" href="#"><img src="images/user/1801_s.jpg" alt="ScauZhang"></a>
+						</div>
+						<div>
+							<p class="comt-uname">
+								<a href="#" class="uname-ath">ScauZhang</a><span class="icon-heart-empty"></span>1
+								<a href="#" class="pull-right">#1</a>
+								<a href="#" class="comt-star pull-right">赞</a>
+							</p>
+							<p class="comt-ptime">
+								6&nbsp;月前
+							</p>
+							<div class="comt-cont">
+								赞，行业风向标就这篇了。
+								其实我想知道为什么很多前端开发人员用一点点后端的知识就可以漂亮解决的问题，为什么会花N倍的时间非要在浏览器上用纯前端来解决。
+							</div>
+						</div>
+				</li>
+				
+			</ul>
+
+			<div class="u-tips u-tips-info">你暂时没有这里的回复权限。</div>
+		</div>
+		
+		
+
+		<div class="footer">
+			<p class="copyright">
+				© Comp 2015 <br>
+				Design: <a href="#">ScauZhang</a>   <br>
+				Email: <a href="#">scau_zhang@formail.com</a>
+			</p>
+		</div>
+	</div>
+</body>
+</html>
