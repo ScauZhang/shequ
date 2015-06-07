@@ -1,0 +1,11 @@
+.clear:after{
+	clear: both;
+	visibility: hidden;
+	content: '.';
+	display: block;
+	
+}
+.pull-right{
+	float: right;
+}
+
